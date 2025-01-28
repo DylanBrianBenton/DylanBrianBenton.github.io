@@ -1,0 +1,209 @@
+:root {
+    --primary: #0070f3;
+    --primary-foreground: #ffffff;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #111111;
+    --accent: #f38e00;
+    --accent-foreground: #ffffff;
+    --background: #ffffff;
+    --foreground: #111111;
+    --card: #ffffff;
+    --card-foreground: #111111;
+    --border: #e5e5e5;
+    --ring: #f38e00;
+    --header: #212529;
+}
+
+.profile-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid var(--border);
+}
+
+.card-title {
+    color: var(--card-foreground);
+    font-weight: 600;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    color: var(--muted-foreground);
+}
+
+.location {
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+}
+
+.bio {
+    color: var(--card-foreground);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.badge {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    background-color: var(--header);
+}
+
+.social-links .btn {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.social-links .btn:hover {
+    border: 2px solid var(--border);
+}
+
+.bi {
+    font-size: 1.2rem;
+}
+
+.navtop {
+    background-color: var(--header);
+    height: 100px;
+}
+
+.menuIcon {
+    height: 50px;
+}
+
+#offcanvasBottom {
+    --bs-offcanvas-height: 15vh; /* Set the height */
+    --bs-offcanvas-max-height: 15vh; /* Optional: set max height */
+  }
+
+.nav-link {
+    color: #303030;
+    padding: 5px;
+  }
+
+.nav-link:hover {
+    color: #f8f9fa;
+    padding: 5px;
+    background-color:#303030;
+  }
+
+.content{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+a.card-linkOL{
+    text-decoration: none;
+}
+  
+i {
+    font-size:50px;
+}
+
+.row-padding {
+    padding: 10px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-left: 60px;
+}
+
+.card {
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.company-logo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company-name {
+    color: rgba(0,0,0);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    color: var(--header);
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.duration {
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+}
+
+.duties .list-group-item {
+    border: none;
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.duties .list-group-item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--header);
+}
+
+.duration i {
+    margin-right: 8px;
+  }
+
+.bi.bi-list {
+    color: var(--card);
+}
+
+html {
+    overflow-y: scroll;
+  }
+  
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        margin-left: 40px;
+    }
+    
+    .timeline-point {
+        left: -28px;
+    }
+    
+    .company-logo {
+        margin-bottom: 1rem;
+    }
+}
